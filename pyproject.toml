@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mi-genderbias-qwen-nla"
+version = "0.1.0"
+description = "Mechanistic interpretability of occupational gender bias in Qwen2.5-7B, explained with Anthropic's Natural Language Autoencoders and fixed by activation steering."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+# torch is pre-installed on Colab; locally install the CPU build first (see README).
+dependencies = [
+  "transformers>=4.45",
+  "accelerate>=0.33",
+  "numpy",
+  "pandas",
+  "scipy",
+  "matplotlib",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ipykernel"]
+# Installed only in notebook 03 on a GPU runtime.
+nla = ["sglang[all]>=0.5.6", "pyarrow", "safetensors", "httpx", "orjson", "pyyaml"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

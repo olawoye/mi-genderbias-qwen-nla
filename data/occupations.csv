@@ -1,0 +1,44 @@
+occupation,pct_female_approx,group
+secretary,92,female_dominated
+receptionist,88,female_dominated
+nurse,87,female_dominated
+hairdresser,90,female_dominated
+dental hygienist,94,female_dominated
+childcare worker,93,female_dominated
+preschool teacher,97,female_dominated
+housekeeper,88,female_dominated
+dietitian,91,female_dominated
+paralegal,85,female_dominated
+bookkeeper,88,female_dominated
+librarian,80,female_dominated
+social worker,82,female_dominated
+teacher,79,female_dominated
+psychologist,79,female_dominated
+cashier,71,mixed
+baker,60,mixed
+pharmacist,60,mixed
+accountant,59,mixed
+writer,59,mixed
+designer,55,mixed
+physician,44,mixed
+cook,39,mixed
+lawyer,39,mixed
+janitor,37,mixed
+manager,31,male_dominated
+CEO,30,male_dominated
+architect,28,male_dominated
+farmer,26,male_dominated
+surgeon,24,male_dominated
+security guard,23,male_dominated
+chef,21,male_dominated
+software developer,21,male_dominated
+engineer,16,male_dominated
+police officer,15,male_dominated
+truck driver,8,male_dominated
+pilot,6,male_dominated
+firefighter,5,male_dominated
+construction worker,4,male_dominated
+carpenter,3,male_dominated
+electrician,3,male_dominated
+plumber,2,male_dominated
+mechanic,2,male_dominated
