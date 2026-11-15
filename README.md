@@ -9,6 +9,8 @@ A small, reproducible mechanistic interpretability demo:
 
 Sister repo (same pipeline, Mistral-7B, linear probe instead of the NLA): [mi-genderbias-mistral-steer](https://github.com/olawoye/mi-genderbias-mistral-steer).
 
+**New to MI? Start with the [learning guide](docs/LEARN.md)**: the four stages and the concepts behind each.
+
 ## Notebooks
 
 | # | Notebook | GPU | Open |
@@ -27,6 +29,9 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install -e ".[dev]"
 pytest -q
 ```
+
+## Resuming after a Colab disconnect
+Checkpoints and results are saved to Google Drive (`MyDrive/mibias_cache`, `MyDrive/mibias_results`). Reconnect and *Run all*: finished steps load instantly and only the interrupted chunk is recomputed.
 
 ## Status
 Work in progress, accompanying an independent research paper on mechanistic interpretability.
